@@ -1,0 +1,3 @@
+0 No Fire
+1 Main-Fire
+2 Smoke-Fire
