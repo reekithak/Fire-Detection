@@ -1,5 +1,5 @@
 from flask import Flask ,render_template , request
-from flask_uploads import UploadSet, configure_uploads, IMAGES
+from flask_uploads import UploadSet, configure_uploads,IMAGES
 
 from model import predict
 from tensorflow.keras.preprocessing.image import load_img
