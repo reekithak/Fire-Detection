@@ -1,2 +1,3 @@
 # Fire-Detection
 The project focuses on Trying to identify and detect Fire at an early stage. That is from the point where the smoke starts off...
+API Deployed: https://firedetectionapi.azurewebsites.net/upload
