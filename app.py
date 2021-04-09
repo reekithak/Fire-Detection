@@ -27,7 +27,7 @@ def upload():
         image = load_img('./static/img/'+filename,target_size=(224,224))
 
         prediction = predict(image)
-        answer = "No Fire:{} Fire-Main !!:{} High Alert- Might be fire:{}".format(prediction[0][0],
+        answer = "No Fire:{} , Fire-Main !!:{} ,High Alert- Might be fire:{}".format(prediction[0][0],
         prediction[0][1],
         prediction[0][2],
        )
