@@ -1,13 +1,28 @@
 <html>
     <head>
         <title>Upload</title>
+        <link rel="stylesheet" href="upload.css">
     </head>
     <h2>Smoke / Early Fire Detection</h2>
     <h4>Base API</h4>
+
+
+
     <body>
+        <div>
+            <style>
+                body {
+                    background-image: url('fire.jpg');
+                    background-attachment: fixed;
+                    
+                    background-size: 100% 100%;
+                }
+            </style>
+        </div>
+
         <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
-            <input type=file name=photo> 
-            <input type="submit">
+            <input id='choose' type=file name=photo> 
+            <input id='submit' type="submit">
         </form>
     </body>
 </html>
