@@ -27,10 +27,15 @@ def upload():
         image = load_img('./static/img/'+filename,target_size=(224,224))
 
         prediction = predict(image)
-        answer = "No Fire:{} , Fire-Main !!:{} ,High Alert- Might be fire:{}".format(prediction[0][0],
-        prediction[0][1],
-        prediction[0][2],
-       )
+
+        if ((prediction[0][0] >prediction[0][1]) && (prediction[0][0] >prediction[0][2])):
+            answer = "There's a very less possibility of having a fire / No smoke Detected. Base Score: {:.2f}".format(prediction[0][0])
+        elif(prediction[0][1] >prediction[0][2]):
+            answer = "There's a very high possibility of having a fire / Smoke Detected. Base Score: {:.2f}".format(prediction[0][1])
+        else:
+            answer = "There's a very high possibility of having a fire / Smoke Detected. Base Score: {:.2f}".format(prediction[0][2])
+
+        
 
         return answer
 
