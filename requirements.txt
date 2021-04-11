@@ -7,3 +7,4 @@ Flask-Reuploaded==0.3.2
 Flask-RESTful
 Flask-SQLAlchemy
 gunicorn
+opencv-python
